@@ -1,15 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .card {
   background-color: #1B2226;
   width: 49rem;
   border-radius: 1rem;
   margin-left: 9.5rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card .title-highlights {
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+.card div {
+  border: solid 1px rgba(255, 255, 255, 0.6);
+  grid: 1fr;
+  gap: 2;
+  padding: 1.5rem;
+}
+.card div img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+}
+.card div p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+.card div .posts {
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -156,4 +180,4 @@ body ul {
   border-radius: 1rem;
 }
 
-/*# sourceMappingURL=style.min.css.map */
+/*# sourceMappingURL=style.css.map */

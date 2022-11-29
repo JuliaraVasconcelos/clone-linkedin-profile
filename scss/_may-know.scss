@@ -1,0 +1,39 @@
+.may-know {
+    
+    margin-top: 8px;
+    .info-side-profile {
+            display: flex;
+            margin-top: 8px;
+    
+            img {
+                width: 3rem;
+                height: 3rem;
+                margin-right: 8px;
+            }
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                p {
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+    
+                span {
+                    color: v.$secondary-color;
+                }
+            }
+        }
+        button{
+            width: 154px;
+            height: 28px;
+            background-color: v.$bg-card;
+            border: 1px solid v.$white;
+            border-radius: 1rem;
+            font-weight: 700;
+            color: v.$white;
+            margin-top: 14px;
+        }
+}

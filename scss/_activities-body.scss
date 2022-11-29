@@ -1,0 +1,27 @@
+.activities-body{
+    
+    font-size: .9rem;
+    span{
+        color: v.$secondary-color;
+    }
+    .post{
+        display: flex;
+        margin-bottom: .4rem;
+        padding: .5rem;
+        p{
+            text-align: justify;
+        }
+    }
+    img{
+        width: 4rem;
+        height: 4rem;
+        margin: .4rem;
+    }
+    .show-more{
+        text-align: center;
+    }
+    .divide {
+        border-bottom: 1px solid v.$secondary-color;
+        margin: 1rem 0;
+    }
+}

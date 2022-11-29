@@ -1,0 +1,51 @@
+.experience{
+    
+    .position{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid v.$secondary-color;
+        padding-left: 2rem;
+        margin-left: 1.5rem;
+        margin-bottom: .6rem;
+        h3{
+            font-size: 1rem;
+        }
+        .duration, .local{
+            color: v.$secondary-color;
+        }
+    }
+}
+.experience-item {
+    display: flex;
+    flex-direction: column;
+}
+.organization {
+    display: flex;
+    margin-top: 8px;
+    
+    img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 8px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        span {
+            color: v.$secondary-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+

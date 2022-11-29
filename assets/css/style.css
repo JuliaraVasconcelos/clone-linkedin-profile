@@ -4,19 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
-body a {
-  text-decoration: none;
-  color: #70B5F9;
-  font-weight: 700;
-}
-body ul {
-  list-style: none;
+.card {
+  background-color: #1B2226;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .navbar {
@@ -74,16 +66,10 @@ body ul {
   justify-content: center;
 }
 
-.profile {
-  background-color: #1B2226;
-  width: 49rem;
-  border-radius: 1rem;
-  margin-left: 9.5rem;
-}
 .profile .cover img {
   width: 100%;
   height: 12rem;
-  object-fit: cover;
+  object-fit: none;
   border-radius: 0.8rem 0.8rem 0 0;
 }
 .profile .profile-pic {
@@ -96,9 +82,6 @@ body ul {
 }
 .profile .profile-info {
   display: flex;
-}
-.profile .profile-info .main-info {
-  padding-left: 1.5rem;
 }
 .profile .profile-info .main-info h2 {
   color: #ffffff;
@@ -113,22 +96,16 @@ body ul {
   font-size: 0.9rem;
 }
 .profile .profile-info .qualification {
-  padding-left: 1.5rem;
   color: #ffffff;
   font-size: 1rem;
   align-items: center;
 }
 .profile .profile-info .local {
-  padding-left: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
 }
 .profile .profile-info .connections {
-  padding-left: 1.5rem;
   font-size: 0.9rem;
-}
-.profile .profile-info .profile-actions {
-  padding: 1.5rem 0;
 }
 .profile .profile-info .profile-actions .full-button {
   background-color: #70B5F9;
@@ -146,6 +123,256 @@ body ul {
   height: 2rem;
   color: #70B5F9;
   border-radius: 1rem;
+}
+
+.body-posts {
+  display: flex;
+  padding-top: 0.4rem;
+  justify-content: space-around;
+}
+.body-posts .posts {
+  width: 30%;
+  border: solid 1px rgba(255, 255, 255, 0.6);
+  border-radius: 0.5rem;
+  padding: 0.9rem 0;
+}
+.body-posts .posts img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+}
+.body-posts .posts p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.body-posts .posts a {
+  font-weight: 300;
+}
+.body-posts .posts .legenda {
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.activities-body {
+  font-size: 0.9rem;
+}
+.activities-body span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.activities-body .post {
+  display: flex;
+  margin-bottom: 0.4rem;
+  padding: 0.5rem;
+}
+.activities-body .post p {
+  text-align: justify;
+}
+.activities-body img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.4rem;
+}
+.activities-body .show-more {
+  text-align: center;
+}
+.activities-body .divide {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 1rem 0;
+}
+
+.experience .position {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  padding-left: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.experience .position h3 {
+  font-size: 1rem;
+}
+.experience .position .duration, .experience .position .local {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.organization {
+  display: flex;
+  margin-top: 8px;
+}
+.organization img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 8px;
+}
+.organization div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.organization div p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.organization div span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.education-body {
+  display: flex;
+  margin-top: 8px;
+}
+.education-body img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 8px;
+}
+.education-body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education-body div p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.education-body div span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.language-body {
+  margin-top: 8px;
+}
+.language-body .divide {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 1rem 0;
+}
+.language-body img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 8px;
+}
+.language-body p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.language-body span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.side-profile {
+  margin-top: 8px;
+}
+.side-profile .info-side-profile {
+  display: flex;
+  margin-top: 8px;
+}
+.side-profile .info-side-profile img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 8px;
+}
+.side-profile .info-side-profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.side-profile .info-side-profile div p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.side-profile .info-side-profile div span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.side-profile button {
+  width: 154px;
+  height: 28px;
+  background-color: #1B2226;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 14px;
+}
+
+.may-know {
+  margin-top: 8px;
+}
+.may-know .info-side-profile {
+  display: flex;
+  margin-top: 8px;
+}
+.may-know .info-side-profile img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 8px;
+}
+.may-know .info-side-profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.may-know .info-side-profile div p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.may-know .info-side-profile div span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.may-know button {
+  width: 154px;
+  height: 28px;
+  background-color: #1B2226;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 14px;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+body a {
+  text-decoration: none;
+  color: #70B5F9;
+  font-weight: 700;
+}
+body ul {
+  list-style: none;
+}
+body h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+body .main {
+  grid-area: main;
+  width: 100%;
+  min-width: 780px;
+}
+body .aside {
+  grid-area: aside;
+  width: 100%;
+  min-width: 320px;
+}
+body .grid-container {
+  margin: 0 300px;
+  display: grid;
+  grid-template-areas: "main aside";
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
